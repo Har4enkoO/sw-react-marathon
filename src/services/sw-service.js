@@ -30,4 +30,8 @@ export default class SwapiService {
   getStarship(id) {
     return this.getResource(`starships/${id}`);
   }
+  static getInfo = async (url) => {
+        const resp = await axios.get(url);
+         return resp.data
+    }
 }

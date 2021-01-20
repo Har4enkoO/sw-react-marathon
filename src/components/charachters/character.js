@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SwService from '../services/sw-service';
+import SwService from '../../services/sw-service';
 
 import "./character-style.css";
 
