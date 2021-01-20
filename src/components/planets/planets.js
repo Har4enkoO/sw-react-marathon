@@ -79,7 +79,7 @@ export default class Planets extends Component {
                 </li>
                 <li className='list-group-item'>
                   <span className='term'>Rotation Period: </span>
-                  <span>{item.rotationPeriod}</span>
+                  <span>{item.rotation_period}</span>
                 </li>
                 <li className='list-group-item'>
                   <span className='term'>Diameter: </span>

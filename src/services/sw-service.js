@@ -14,22 +14,6 @@ export default class SwapiService {
   getPerson(id) {
     return this.getResource(`people/${id}`);
   }
-
-  async getAllPlanets() {
-    const planets = await this.getResource(`planets/`);
-    return planets.results;
-  }
-  getPlanet(id) {
-    return this.getResource(`planets/${id}`);
-  }
-
-  async getAllStarShips() {
-    const starships = await this.getResource(`starships/`);
-    return starships.results;
-  }
-  getStarship(id) {
-    return this.getResource(`starships/${id}`);
-  }
   static getInfo = async (url) => {
         const resp = await axios.get(url);
          return resp.data
